@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Form from './Form';
+import  Form  from '../Form/Form';
 
 const API_KEY = 'a1c78bc26f6332af3f0710d75b9ae1da';
 
-function Api() {
+export function GetWeaterData() {
     const [city, setCity] = useState('');
     const [cityData, setCityData] = useState(null);
 
@@ -29,5 +29,3 @@ function Api() {
         </div>
     );
 }
-
-export default Api;

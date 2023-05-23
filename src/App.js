@@ -1,10 +1,10 @@
-import { Api } from './API/Api'
+import { GetWeaterData } from './components/API/GetWeatherData'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Api />
+      <GetWeaterData />
     </div>
   );
 }
