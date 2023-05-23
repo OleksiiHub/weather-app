@@ -1,4 +1,6 @@
 import { Button, Input } from 'semantic-ui-react';
+import './css/style.min.css';
+
 
 const Form = ({ setInput, handleSubmit }) => {
     const handleInputChange = (event) => {
@@ -6,8 +8,14 @@ const Form = ({ setInput, handleSubmit }) => {
     };
     return (
         <form onSubmit={handleSubmit}>
-            <Input placeholder="Enter a city" onChange={handleInputChange} />
-            <Button type="submit">Submit</Button>
+            <Input 
+            icon ='search'
+            placeholder="Enter a city" 
+            onChange={handleInputChange} />
+            <Button 
+            className='btn'
+            primary
+            type="submit">Submit</Button>
         </form>
     );
 };
